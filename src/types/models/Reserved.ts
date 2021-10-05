@@ -16,7 +16,7 @@ export class Reserved implements Entity {
 
     public reserveAmount?: bigint;
 
-    public timestamp: Date;
+    public timestamp?: Date;
 
 
     async save(): Promise<void>{

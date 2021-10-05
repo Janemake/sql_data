@@ -16,7 +16,7 @@ export class Deposit implements Entity {
 
     public depositAmount?: bigint;
 
-    public timestamp: Date;
+    public timestamp?: Date;
 
 
     async save(): Promise<void>{

@@ -3,7 +3,7 @@ type Deposit @entity
   id: ID!
   depositAccount: String!
   depositAmount: BigInt
-  timestamp: Date! 
+  timestamp: Date
 }
 
 type Transfer @entity {
@@ -11,28 +11,28 @@ type Transfer @entity {
   transferTo: String!
   transferFrom: String!
   transferAmount: BigInt
-  timestamp: Date!
+  timestamp: Date
 }
 
 type Reserved @entity {
   id: ID!
   reservefrom: String!
   reserveAmount: BigInt
-  timestamp: Date!
+  timestamp: Date
 }
 
 type Endowed @entity {
   id: ID!
   accCreated: String!
   endowedAmount: BigInt
-  timestamp: Date!
+  timestamp: Date
 }
 
 type Unreserved @entity {
   id: ID!
   unreservefrom: String!
   unreserveAmount: BigInt
-  timestamp: Date!
+  timestamp: Date
 }
 
 type BalanceSet @entity {
@@ -40,5 +40,5 @@ type BalanceSet @entity {
   accountSet: String!
   freeAmount: BigInt
   reservedAmount: BigInt
-  timestamp: Date!
+  timestamp: Date
 }

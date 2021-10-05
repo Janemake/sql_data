@@ -16,7 +16,7 @@ export class Unreserved implements Entity {
 
     public unreserveAmount?: bigint;
 
-    public timestamp: Date;
+    public timestamp?: Date;
 
 
     async save(): Promise<void>{

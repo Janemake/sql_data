@@ -16,7 +16,7 @@ export class Endowed implements Entity {
 
     public endowedAmount?: bigint;
 
-    public timestamp: Date;
+    public timestamp?: Date;
 
 
     async save(): Promise<void>{
